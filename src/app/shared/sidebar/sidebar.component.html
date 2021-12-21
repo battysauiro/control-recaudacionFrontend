@@ -1,0 +1,31 @@
+
+<div class="d-flex" id="wrapper"> 
+    <div class="bg-white" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+        <i class="icon ion-logo-angular"></i> Municipio
+      </div>
+      <div class="list-group list-group-flush my-3">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+          <i class="icon ion-md-apps"></i> Inicio</a>
+        <a href="#" class="list-group-item list-group-item-action  second-text fw-bold">
+          <i class="icon ion-md-contact"></i> Funciones Presidente</a>
+        <a href="#" class="list-group-item list-group-item-action  second-text fw-bold">
+          <i class="icon ion-md-today"></i> funciones sindical</a>
+        <a class="list-group-item list-group-item-action second-text fw-bold" routerLink="linea-pagos" routerLinkActive="active">
+          <i class="icon ion-md-card"></i> Captura de pagos</a>
+        <a href="#" class="list-group-item list-group-item-action second-text fw-bold">
+          <i class="icon ion-md-paper"></i> Funciones hacienda</a>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+ <!-- </div> -->
+  
+  <script>
+    var el = document.getElementById("wrapper");
+    var toggleButton = document.getElementById("menu-toggle");
+  
+    toggleButton.onclick = function () {
+        el.classList.toggle("toggled");
+    };
+  </script>
+  
