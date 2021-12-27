@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LineaPagosComponent } from './linea-pagos/linea-pagos.component';
+import { InicioAdminComponent } from './inicio-admin/inicio-admin.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    LineaPagosComponent
+    LineaPagosComponent,
+    InicioAdminComponent,
+    
   ],
   imports: [
     BrowserModule,
