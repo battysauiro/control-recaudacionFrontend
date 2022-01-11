@@ -47,7 +47,9 @@
     width: 15rem;
   }
   
-  
+  a:hover {
+    background-color: gold;
+  } 
   
   
   #menu-toggle {
