@@ -4,7 +4,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarLinea" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              linea de L
+              linea de Captura
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarLinea">
               <li><a class="dropdown-item" href="#">A724</a></li>
@@ -19,7 +19,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarContribuciones">
               <li><a class="dropdown-item" > Impuestos &raquo; </a>
                 <ul class="submenu dropdown-menu">
-                 <li><a class="dropdown-item" href="#">Impuesto predial</a></li>
+                 <li><a class="dropdown-item"   href="" data-bs-toggle="modal" data-bs-target="#msjConfPago">Impuesto predial</a></li>
 				         <li><a class="dropdown-item" href="#">Impuesto sobre traslado de dominio</a></li>
                  <li><a class="dropdown-item" href="#">Impuesto sobre fraccionamiento y fusión de bienes y muebles</a></li>
                  <li><a class="dropdown-item" href="#">Impuesto sobre rifas y sorteos, loterías y concursos</a></li>
@@ -85,10 +85,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">RMC</a>
+            <a class="nav-link" href="registroContribuyentes">RMC</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Ingresos</a>
+            <a class="nav-link"  href="pagos" data-bs-toggle="modal" data-bs-target="#">Ingresos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Egresos</a>
@@ -97,10 +97,41 @@
             <a class="nav-link" href="legislacion">Legislacion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Control Interno</a>
+            <a class="nav-link" href="#">Control Interno </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Actividades</a>
           </li>
         </ul>
       </div>
     </div>
 </nav>
+
+
+<div class="modal fade" id="msjConfPago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Generar Pago 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Datos:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Observaciones:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Generar pagooos</button>
+      </div>
+    </div>
+  </div>
+</div>
   
